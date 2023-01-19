@@ -4,56 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="./assets/CSS/style.css">
     <title>Netflix</title>
 </head>
+
 <body>
-    <h1>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix" style="width: 200px;">
-    </h1>
-    <form>
-        <label for="email">Email  </label><br>
-        <input type="text" id="email" name="senha"><br><br>
-        <label for="senha">Senha  </label><br>
-        <input type="password" id="senha" name="senha" ><br>
-        <input type="submit" value="Entrar">
-        <a href="">Precisa de ajuda?</a>
-        <hr>
-        <input type="submit" value="Criar nova conta">
-        <br> <br>
-
-        <label>Quail sua linguagem de programacao favorita</label><br>
-
-        <input type="radio" id="html" name="fav_language" value="HTML">
-        <label for="html">HTML</label><br>
-        <input type="radio" id="css" name="fav_language" value="CSS">
-        <label for="css">CSS</label><br>
-        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
-        <label for="javascript">JavaScript</label><br>
-
-        <label>Quais linguagens de programacao voce conhece?</label><br>
-        <select multiple>
-            <optgroup label="top">
-            <option value="1">Python</option>
-            <option value="2">Java</option>
-            <option value="3">C#</option>
-             </optgroup>
-            <optgroup label="bottom">
-            <option value="4">C++</option>
-            <option value="5">PHP</option>
-            <option value="6">Ruby</option>
-            </optgroup>
-
-        </select>
-
-
-     
-      
-        
-       
-    </form>
-
-
+    
+    <header class="cabecalho">
+        <a href="index.html"><img src="./assets/imagens/netflix.svg" alt="logo" class="logo"></a>
+    </header>
+    
+    <main>
+        <div class="login">
+            <h1>Entrar</h1>
+            <form action="">
+                <input type="email" placeholder="Email ou número de telefone" class="email-input">
+                <input type="password" placeholder="Senha" class="senha-input">
+                <button class="botao-login">Entrar</button>
+                <input type="checkbox" class="checkbox" >
+            </form>
+            <a href="#">Precisa de ajuda?</a>
+    
+        </div>
+    
+        <div class="informacoes">
+    
+        </div>
+    
+    </main>
 
 </body>
 </html>
