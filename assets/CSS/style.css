@@ -2,38 +2,55 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;500&display=swap');
 
-
+/* Geral */
 body{
     margin: 0px;
     padding: 0px;
     height: 100vh;
     width: 100%;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    background-color: gray;
+}
+
+body.bg_filmes{
     position: relative;
     background-image: url("../imagens/background.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    font-family: 'Inter', sans-serif;
-    font-size: 16px;
-    color: #fff;
 }
 
-body::before {
+body.bg_filmes::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    
     z-index: -1;
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-.logo{
-    width: 12%;
+header{
+    
+    width: 100%;
     top: 0;
     padding: 20px 40px;
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.7) 0%,
+        rgba(0, 0, 0, 0) 100%
+    );
+    z-index: 2;
+}
 
+
+
+
+/* Login */
+.logo{
+    width: 12%;
 }
 
 .login{
@@ -52,8 +69,6 @@ body::before {
     transform: translateX(-50%);
     
 }
-
-
 
 h2{
     margin-bottom: 10px;
@@ -76,26 +91,24 @@ h2{
 .input-box input:hover{
     background-color: #444;
 }
-
-
 .submit{
+    display: flex;
     width: 100%;
     height: 50px;
     border-radius: 3px;
     margin-bottom: 10px;
     background-color: #E50914;
-    border:none;
+    justify-content: center;
+    align-items: center;
     color: #fff;
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
 }
-
 .submit:hover{
     background-color: #ff222d;
     cursor: pointer;
 }
-
 .suporte{
     display: flex;
     color: #b3b3b3;
@@ -160,7 +173,100 @@ h2{
     text-decoration: underline;
 }
 
+/* Home */
 
 
+
+.menu_list{
+    list-style: none;
+    padding-left: 0;
+}
+
+.menu_list li{
+    display: inline-block;
+    margin-left: 20px;
+   
+}
+
+.menu_list li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 400;
+    transition: 0.5s;
+}
+
+.menu_list li a:hover{
+    font-weight: 200;
+}
+
+.cabecalho{
+    display: flex;
+    position: absolute;
+}
+.cabecalho img{
+    width: 100px;
+    height: 50px;
+}
+
+.hero{
+    height: 700px;
+    width: 100%;
+    background-image: url("../imagens/90showBillboard.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    padding-left: 35px;
+}
+
+.hero_infos{
+    width: 35%;
+    padding: 0;
+    margin-top: 150px;
+    z-index: 3;
+    position: relative;
+}
+
+.hero_logo{
+    
+    width: 500px;
+}
+.hero_button:nth-child(1){
+    background-color: rgba(255, 255, 255, 1);
+    height: 40px;
+    width: 130px;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    font-size: 16px;
+    margin-right: 10px;
+}
+.hero_button:nth-child(2){
+    background-color: rgba(90, 90, 90, 0.8);;
+    height: 40px;
+    width: 200px;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    font-size: 16px;
+    color: #fff;
+    
+}
+.hero_button:nth-child(2):hover{
+    background-color: rgba(90, 90, 90, 0.7);
+    cursor: pointer;
+}
+.hero_button:nth-child(1):hover{
+    background-color: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+}
+
+.hero_button span{
+    width: 50px;
+    height: 50px;
+}
 
     
